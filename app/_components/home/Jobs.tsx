@@ -10,7 +10,10 @@ export default function Jobs() {
     <Pressable
       style={styles.card}
       onPress={() =>
-        router.navigate({ pathname: "/job/[id]", params: { id: `item.id` } })
+        router.navigate({
+          pathname: "/job/[id]",
+          params: { id: item.id },
+        })
       }
     >
       <View style={styles.rowBetween}>

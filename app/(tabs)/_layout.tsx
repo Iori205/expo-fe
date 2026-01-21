@@ -13,7 +13,6 @@ export default function TabLayout() {
         tabBarActiveTintColor: Colors[colorScheme ?? "light"].tint,
       }}
     >
-      {/* 🏠 НҮҮР */}
       <Tabs.Screen
         name="index"
         options={{
