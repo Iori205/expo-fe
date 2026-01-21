@@ -22,9 +22,17 @@ export default function RootLayout() {
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
 
         <Stack.Screen
-          name="job/[id]"
+          name="job/[id]/index"
           options={{
             title: "Ажлын дэлгэрэнгүй",
+            headerBackTitle: "Буцах",
+          }}
+        />
+
+        <Stack.Screen
+          name="job/[id]/edit"
+          options={{
+            title: "Зар засах",
             headerBackTitle: "Буцах",
           }}
         />

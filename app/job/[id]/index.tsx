@@ -3,8 +3,8 @@ import { JobDetail } from "@/lib/types";
 import { useFocusEffect, useLocalSearchParams } from "expo-router";
 import { useEffect, useRef, useState } from "react";
 import { ScrollView, StyleSheet, Text, View } from "react-native";
-import Bottom from "./_components/Bottom";
-import Content from "./_components/Content";
+import Bottom from "../_components/dynamic/Bottom";
+import Content from "../_components/dynamic/Content";
 
 export default function JobDetailPage() {
   const params = useLocalSearchParams<{ id?: string | string[] }>();
